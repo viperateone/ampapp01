@@ -12,7 +12,7 @@ function App() {
   let handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      let res = await fetch("https://httpbin.org/post", {
+      let res = await fetch("https://main.dl3y2i64xli37.amplifyapp.com/acfp", {
         method: "POST",
         body: JSON.stringify({
           name: name,
