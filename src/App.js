@@ -28,8 +28,8 @@ function App() {
 	    .catch(e => { // error handling? 
 	    })
 	    .then( //token => {
-		    //return loginToMyPage()
-	    })
+		    //return loginToMyPage()}
+	    )
       if (res.status === 200) {
         setName("");
         setEmail("");
