@@ -12,9 +12,9 @@ function App() {
   let handleSubmit = async (e) => {
     e.preventDefault();
     try {
-    <head>
-	src="<script type="text/javascript" src="https://83de05343b4f.edge.sdk.awswaf.com/83de05343b4f/8fe518bd50be/challenge.js" defer></script>"
-	</head>
+//    <head>
+//	src="<script type="text/javascript" src="https://83de05343b4f.edge.sdk.awswaf.com/83de05343b4f/8fe518bd50be/challenge.js" defer></script>"
+//	</head>
       let res = await AwsWafIntegration.fetch("https://dfez0bzneh5yw.cloudfront.net/acfp", {
         method: "POST",
         body: JSON.stringify({
@@ -23,13 +23,13 @@ function App() {
           mobileNumber: mobileNumber,
         }),
       });
-      //let resJson = await res.json();
-	const resJson = await AwsWafIntegration.getToken()
-	    .catch(e => { // error handling? 
-	    })
-	    .then( //token => {
+     let resJson = await res.json();
+//	const resJson = await AwsWafIntegration.getToken()
+//	    .catch(e => { // error handling? 
+//	    })
+//	    .then( //token => {
 		    //return loginToMyPage()}
-	    )
+//	    )
       if (res.status === 200) {
         setName("");
         setEmail("");
@@ -69,7 +69,7 @@ function App() {
         <div className="message">{message ? <p>{message}</p> : null}</div>
       </form>
 
-	  <script>
+	  /*<script>
 	  const form = document.querySelector("#login-form");
 
 	  // Register an event listener to intercept form submissions
@@ -82,7 +82,7 @@ function App() {
 	          }, (reason) => { console.log("Error:"+reason) });
 	        }
 	    });
-	</script>
+	</script>*/
 
     </div>
   );
