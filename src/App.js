@@ -12,9 +12,9 @@ function App() {
   let handleSubmit = async (e) => {
     e.preventDefault();
     try {
-//    <head>
-//	src="<script type="text/javascript" src="https://83de05343b4f.edge.sdk.awswaf.com/83de05343b4f/8fe518bd50be/challenge.js" defer></script>"
-//	</head>
+    <head>
+	src="<script type="text/javascript" src="https://83de05343b4f.edge.sdk.awswaf.com/83de05343b4f/8fe518bd50be/challenge.js" defer></script>"
+	</head>
       let res = await AwsWafIntegration.fetch("https://dfez0bzneh5yw.cloudfront.net/acfp", {
         method: "POST",
         body: JSON.stringify({
