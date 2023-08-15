@@ -69,21 +69,6 @@ function App() {
         <div className="message">{message ? <p>{message}</p> : null}</div>
       </form>
 
-	  /*<script>
-	  const form = document.querySelector("#login-form");
-
-	  // Register an event listener to intercept form submissions
-	  form.addEventListener("submit", (e) => {
-	      // Submit the form only after a token is available
-	      if (!AwsWafIntegration.hasToken()) {
-	          e.preventDefault();
-	          AwsWafIntegration.getToken().then(() => {
-	              e.target.submit();
-	          }, (reason) => { console.log("Error:"+reason) });
-	        }
-	    });
-	</script>*/
-
     </div>
   );
 }
