@@ -66,9 +66,8 @@ function App() {
 */
 
   return (
-	  <h1 class="heads"> User Registration </h1>
     <div className="App">
-	  
+	 <h1 class="heads"> User Registration </h1>  
       <form id="login-form" onSubmit={handleSubmit}>
         <input
           type="text"
