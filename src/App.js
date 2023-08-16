@@ -40,7 +40,7 @@ function App() {
   };
 
 
-  let handleSubmit2 = async (e) => {
+ /* let handleSubmit2 = async (e) => {
     e.preventDefault();
     try {
       let res = await fetch("https://dfez0bzneh5yw.cloudfront.net/acfp", {
@@ -63,6 +63,7 @@ function App() {
       console.log(err);
     }
   };
+*/
 
   return (
     <div className="App">
