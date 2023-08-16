@@ -92,7 +92,7 @@ function App() {
 
         <div className="message">{message ? <p>{message}</p> : null}</div>
       </form>
-<!-- 	<form id="login-form" onSubmit={handleSubmit2}>
+	  {/* 	<form id="login-form" onSubmit={handleSubmit2}>
         <input
           type="text"
           value={name2}
@@ -115,7 +115,7 @@ function App() {
         <button type="submit">Create</button>
 
         <div className="message">{message ? <p>{message}</p> : null}</div>
-      </form> -->
+      </form> */}
     </div>
   );
 }
