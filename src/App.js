@@ -66,8 +66,9 @@ function App() {
 */
 
   return (
+	  <h1 class="heads"> User Registration </h1>
     <div className="App">
-	  <p></p>
+	  
       <form id="login-form" onSubmit={handleSubmit}>
         <input
           type="text"
@@ -92,8 +93,7 @@ function App() {
 
         <div className="message">{message ? <p>{message}</p> : null}</div>
       </form>
-<!-- 
-	<form id="login-form" onSubmit={handleSubmit2}>
+<!-- 	<form id="login-form" onSubmit={handleSubmit2}>
         <input
           type="text"
           value={name2}
@@ -116,8 +116,7 @@ function App() {
         <button type="submit">Create</button>
 
         <div className="message">{message ? <p>{message}</p> : null}</div>
-      </form>
- -->
+      </form> -->
     </div>
   );
 }
