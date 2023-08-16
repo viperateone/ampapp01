@@ -9,10 +9,10 @@ function App() {
   const [mobileNumber, setMobileNumber] = useState("");
   const [message, setMessage] = useState("");
 
-const [name2, setName2] = useState("");
-const [email2, setEmail2] = useState("");
-const [mobileNumber2, setMobileNumber2] = useState("");
-const [message2, setMessage2] = useState("");
+//const [name2, setName2] = useState("");
+//const [email2, setEmail2] = useState("");
+//const [mobileNumber2, setMobileNumber2] = useState("");
+//const [message2, setMessage2] = useState("");
 
   let handleSubmit = async (e) => {
     e.preventDefault();
@@ -90,7 +90,7 @@ const [message2, setMessage2] = useState("");
 
         <div className="message">{message ? <p>{message}</p> : null}</div>
       </form>
-
+/*
 	<form id="login-form" onSubmit={handleSubmit2}>
         <input
           type="text"
@@ -115,7 +115,7 @@ const [message2, setMessage2] = useState("");
 
         <div className="message">{message ? <p>{message}</p> : null}</div>
       </form>
-
+*/
     </div>
   );
 }
