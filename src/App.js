@@ -19,7 +19,7 @@ function App() {
     try {
       const wafIntegration = window.AwsWafIntegration;
       //let res = await wafIntegration.fetch("https://dfez0bzneh5yw.cloudfront.net/acfp", {
-	let res = await wafIntegration.fetch("WAF-ALB01-195981035.us-east-1.elb.amazonaws.com", {
+	let res = await wafIntegration.fetch("WAF-ALB01-195981035.us-east-1.elb.amazonaws.com/acfp", {
         method: "POST",
         body: JSON.stringify({
           name: name,
